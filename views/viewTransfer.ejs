@@ -1,0 +1,390 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="ROBOTS" content="NOINDEX,NOFOLLOW" /><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Language" content="en" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+	ACEFINANCE BANK - We Keep Our Word!
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="HHB." />
+<meta name="msapplication-tap-highlight" content="no" />
+<link rel="shortcut icon" href="../icon.png" type="image/x-icon"/>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/js/all.min.js" integrity="sha512-YUwFoN1yaVzHxZ1cLsNYJzVt1opqtVLKgBQ+wDj+JyfvOkH66ck1fleCm8eyJG9O1HpKIf86HrgTXkWDyHy9HA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!--
+    =========================================================
+    * Bankia Application Dashboard - v1.0.0
+    =========================================================
+    * Product from: Digital Forest Team 
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link href="/account/css/digital_forest_team_assets_main.css" rel="stylesheet" />
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+<style>
+.arrow {
+  border: solid green;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+
+
+<style>
+.alert {
+  padding: 20px;
+  background-color: #3A3A55;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+@media(max-width:760px)
+{
+ .header__pane
+ {
+     display:none;
+ }   
+}
+</style>
+
+
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="/account/css/translateelement.css" />
+<script type="text/javascript" charset="UTF-8" src="/account/js/mel_main.js"></script>
+    
+
+</head>
+<body style="position: relative; min-height: 100%; top: 0px;">
+    
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow bg-info header-text-light" style="background-color: #3A3A55;">
+            <div class="app-header__logo">
+                <div class="logo-src">
+                    <img src="/image/logo.png" style="width:100px; position: fixed; transform: translate(50%);" />
+                </div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>  
+            <div class="app-header__content">
+                <div class="app-header-left">
+                   
+                    
+                     </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                        <img id="Image1" class="rounded-circle" src="/profile/no-photo.png" style="width: 50px;">
+										  
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                        <span style="text-transform:uppercase;"><%=user.fullname%></span> 
+                                                                             </div>
+                                    <div class="widget-subheading">
+                                        Bank Admin
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <a href="/logout">  <svg class="svg-inline--fa fa-power-off fa-w-16" style="font-size: 28px;color: #3A3A55;" aria-hidden="true" data-prefix="fas" data-icon="power-off" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M400 54.1c63 45 104 118.6 104 201.9 0 136.8-110.8 247.7-247.5 248C120 504.3 8.2 393 8 256.4 7.9 173.1 48.9 99.3 111.8 54.2c11.7-8.3 28-4.8 35 7.7L162.6 90c5.9 10.5 3.1 23.8-6.6 31-41.5 30.8-68 79.6-68 134.9-.1 92.3 74.5 168.1 168 168.1 91.6 0 168.6-74.2 168-169.1-.3-51.8-24.7-101.8-68.1-134-9.7-7.2-12.4-20.5-6.5-30.9l15.8-28.1c7-12.4 23.2-16.1 34.8-7.8zM296 264V24c0-13.3-10.7-24-24-24h-32c-13.3 0-24 10.7-24 24v240c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24z"></path></svg><!-- <i class="fas fa-power-off" style="font-size:28px;color:#3A3A55"></i> --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        </div>
+            </div>
+        </div>                <div class="app-main">
+
+
+												<!----only from Digital Forest--Side Bar----------->
+                                            	      <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>  
+                      <div class="scrollbar-sidebar ps ps--active-y">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu metismenu">
+                                <li class="app-sidebar__heading">Dashboards</li>
+                                <li>
+                                    <a href="/adminRoute" class="mm-active">
+                                       <i class="fas fa-landmark" style="font-size:20px;color:#900C3F"></i>&nbsp;
+                                    all users
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading"> Transfers</li>
+
+                                <li>
+                                    <a href="/allTransfer" class="mm-active">
+                                       <i class="fas fa-landmark" style="font-size:20px;color:#900C3F"></i>&nbsp;
+                                        all Transfers
+                                    </a>
+                                </li>
+
+                                <li class="app-sidebar__heading"> Loans</li>
+
+                                <li>
+                                    <a href="/allLoans" class="mm-active">
+                                       <i class="fas fa-landmark" style="font-size:20px;color:#900C3F"></i>&nbsp;
+                                        all Loans
+                                    </a>
+                                </li>
+
+                                <li class="app-sidebar__heading">Support</li>
+
+                                <li>
+                                    <a href="/allTickets" class="mm-active">
+                                       <i class="fas fa-landmark" style="font-size:20px;color:#900C3F"></i>&nbsp;
+                                        all Tickets
+                                    </a>
+                                </li>
+								 
+                                <li class="app-sidebar__heading">Sign out</li>
+                                <li>
+                                    <a href="/logout">
+                                      <i class="fas fa-power-off" style="font-size:20px;color:#900C3F"></i>&nbsp;
+                                        Logout
+                                    </a>
+                                </li>
+                                
+                                 
+                            </ul>
+                        </div>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 583px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 474px;"></div></div></div>
+                </div> 
+                                            	   <!------Side Bar----------->
+
+
+
+
+				<div class="app-main__outer" style="max-width: 100%;">
+                    <div class="app-main__inner">
+                        
+                        <div class="row">
+                            
+                          
+                                 
+                                  <div class="col text-end fw-lighter">
+                                    <!-- <b>Last Updated</b> -->
+                                    <b>TransferId:</b>  <b class="text-dark"><%=transfer._id%></b>
+                                  </div>
+                                </div>
+                              
+                              </div>
+                              
+                              <ul class="list-group">
+                    
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Bank:</b></div>
+                                    <div class="col"  style="color: black;">  <%=transfer.Bank%> </div>
+                                  </div>
+                                </li>
+                              
+                        
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Amount:</b></div>
+                                    <div class="col"  style="color: black;">  <%=transfer.amount%> </div>
+                                  </div>
+                                </li>
+              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Account Name:</b></div>
+                                    <div class="col"  style="color: black;"> <%=transfer.accName%> </div>
+                                  </div>
+                                </li>
+              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">email:</b></div>
+                                    <div class="col"  style="color: black;"> <%=transfer.email%> </div>
+                                  </div>
+                                </li>
+              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Account Name:</b></div>
+                                    <div class="col"  style="color: black;"> <%=transfer.accName%> </div>
+                                  </div>
+                                </li>
+              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">bank_Address:</b></div>
+                                    <div class="col"  style="color: black;"> <%=transfer.bank_Address%> </div>
+                                  </div>
+                                </li>
+              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Bank iban:</b></div>
+                                    <div class="col"  style="color: black;"> <%=transfer.bank_iban%> </div>
+                                  </div>
+                                </li>
+              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">account type:</b></div>
+                                    <div class="col"  style="color: black;"> <%=transfer.type%> </div>
+                                  </div>
+                                </li>
+              
+                        
+              
+                                  
+                                  <li class="list-group-item"> 
+                                    <div class="row">
+                                      <div class="col" style="max-width: 140px"> <b  style="color: black;">Account  Number:</b></div>
+                                      <div class="col"  style="color: black;"> <%=transfer.accNo%> </div>
+                                    </div>
+                                  </li>
+              
+                                  <li class="list-group-item"> 
+                                    <div class="row">
+                                      <div class="col" style="max-width: 140px"> <b  style="color: black;">PIN:</b></div>
+                                      <div class="col"  style="color: black;"> <%=transfer.pin%> </div>
+                                    </div>
+                                  </li>
+              
+                                  <li class="list-group-item"> 
+                                    <div class="row">
+                                      <div class="col" style="max-width: 140px"> <b  style="color: black;">Country:</b></div>
+                                      <div class="col"  style="color: black;"> <%=transfer.country%> </div>
+                                    </div>
+                                  </li>
+                        
+                              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Note :</b></div>
+                                    <div class="col"  style="color: black;"> <%=transfer.note%> </div>
+                                  </div>
+                                </li>
+                              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Date Created:</b></div>
+                                    <div class="col"  style="color: black;"> <%= transfer.createdAt %></div>
+                                  </div>
+                                </li>
+                              
+                                <li class="list-group-item"> 
+                                  <div class="row">
+                                    <div class="col" style="max-width: 140px"> <b  style="color: black;">Date Modified:</b></div>
+                                    <div class="col"  style="color: black;"><%= transfer.updatedAt %></div>
+                                  </div>
+                                </li>
+                              
+                              </ul>
+              
+                            
+                            <!--content end div  -->
+                        </div>
+
+     </div>
+     <!-- end of div -->
+                        </div>
+                    </div>
+                 
+                  </div>
+                
+    
+    
+    <script type="text/javascript" src="/account/js/main.js"></script>
+    
+
+
+       
+         <script src="/account/js/element.js" type="text/javascript"></script>
+         
+</body>
+</html>
